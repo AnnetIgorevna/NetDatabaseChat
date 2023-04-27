@@ -90,6 +90,7 @@ public:
 				std::cout << "User's password: " << password << std::endl;
 				_dataBase.addUser(name, login, password);
 				_server.sendMessage("Adding a user was successful!");
+				_currentUser = login;
 				_isUserOnline = true;
 				break;
 			case 3:
